@@ -2,7 +2,7 @@
 
 ## Definition
 
-`useMemo` **caches the result of a calculation** between renders. It only recalculates when one of its dependencies changes.
+`useMemo` **CACHES THE RESULTS OF CALUCULATIONS** between renders. It only recalculates when one of its dependencies changes.
 
 ```tsx
 const value = useMemo(() => expensiveCalculation(a, b), [a, b]);
@@ -13,5 +13,5 @@ const value = useMemo(() => expensiveCalculation(a, b), [a, b]);
 
 It solves two problems:
 
-1. **Performance** — skip expensive recalculations on every render.
-2. **Referential equality** — keep the same object/array reference so children wrapped in `React.memo`, or effects that depend on it, don't re-run unnecessarily.
+1. **Performance**: skip expensive recalculations on every render.
+2. **Referential equality**: keep the same object/array reference so children wrapped in `React.memo`, or effects that depend on it, don't re-run unnecessarily.

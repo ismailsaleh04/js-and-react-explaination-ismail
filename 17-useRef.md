@@ -4,13 +4,9 @@
 
 `useRef` returns a mutable object `{ current: value }` that **persists across renders**.
 
-```tsx
-const ref = useRef(initialValue);
-ref.current; // read / write
-```
-
-It has two main jobs:
-
-1. **Referencing a native element / component** (focus an input, scroll a list).
-2. **Storing a mutable value that should NOT trigger a re-render** (timer ids, previous values, flags).
-
+difference between useRef and useState:
+1. useStates updates cause a re-render. useRef doesn't.
+2. return value of useState is an array []. useRef's is an object {}.
+3. to reassign useState we call the setter function, useRef's reassigning happens by `.current` method.
+4. useState is primarily used with data that affects the UI. useRef with timers ande internal bookkeeping.
+5.  BOTH PRESIST ACROSS RENDERS.    
