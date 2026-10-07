@@ -21,4 +21,3 @@ In React Native, you achieve it with:
 | `PixelRatio` / `fontScale`        | Handle screen density and user font size settings                    |
 | `Platform`                        | Platform-specific styles (`Platform.OS`, `Platform.select`)          |
 
-> React Native units are **density-independent pixels (dp)**, so `width: 100` looks similar in physical size on different devices.
